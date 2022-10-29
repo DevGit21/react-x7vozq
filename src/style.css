@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.Utopia-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* .Utopia-logo {
+    animation: Utopia-logo-spin infinite 20s linear;
+  } */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 3vmin 1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Utopia-title {
+  color: #fff;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  min-height: 12vh;
+}
+
+.continent-name {
+  padding: 3vh 0;
+  overflow-x: auto;
+  min-width: 53vh;
+}
+.content {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    display: block;
+  }
+}
+
+.continent-name a {
+  padding: 2vmin 2rem;
+  font-size: calc(11px + 2vmin);
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.country-list {
+  color: #fff;
+  overflow: auto;
+  max-height: 55vh;
+}
+
+.country-list a {
+  padding: 2vmin 2rem;
+  font-size: calc(8px + 2vmin);
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  border-top: 1px solid #fff;
+}
+
+.country-list a:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+a:hover {
+  text-shadow: 0 0 0.01px #e3127e;
+  color: #e3127e;
+}
+
+a.active {
+  text-shadow: 0 0 0.01px #e3127e;
+  color: #e3127e;
+  background-color: #fff;
+}
+
+@keyframes Utopia-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
